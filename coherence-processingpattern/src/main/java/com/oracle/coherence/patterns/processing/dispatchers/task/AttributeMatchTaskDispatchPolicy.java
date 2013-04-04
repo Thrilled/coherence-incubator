@@ -153,6 +153,9 @@ public class AttributeMatchTaskDispatchPolicy implements TaskDispatchPolicy, Ext
                         matches = false;
                     }
                 }
+                
+                if (!matches)
+                    break;
             }
 
             if (matches)
